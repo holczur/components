@@ -1,0 +1,104 @@
+:root {
+  --main-color: #087f5b;
+  --main-tint: #fdfffe;
+  --grey-color: #343a40;
+  --light-gray: #bbc3ce;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--grey-color);
+  line-height: 1;
+}
+
+.carousel {
+  width: 800px;
+  margin: 100px auto;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  color: var(--main-tint);
+  padding: 32px 48px 32px 86px;
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  position: relative;
+}
+
+.img-persone {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.testimonial-job {
+  font-size: 12px;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: var(--main-color);
+}
+
+.btn--left {
+  left: 0;
+  transform: translate(-50%, 0);
+}
+.btn--right {
+  right: 0;
+  transform: translate(50%, 0);
+}
+
+.dots {
+  display: flex;
+  gap: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 32px);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+}
+
+.dot--fill {
+  background-color: var(--main-color);
+}
