@@ -1,0 +1,74 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+:root {
+  --main-color: #087f5b;
+  --main-tint: #fdfffe;
+  --grey-color: #343a40;
+  --light-gray: #bbc3ce;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--grey-color);
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon {
+  stroke: var(--main-color);
+  height: 35px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey-color);
+  font-weight: 500;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.btn-icon:hover {
+  background-color: var(--main-color);
+  stroke: #fff;
+}
